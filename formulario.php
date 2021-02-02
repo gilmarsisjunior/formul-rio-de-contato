@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 /* recebe os valores*/
 $nome = $_POST ['nome'];
 $email = $_POST ['email'];
@@ -12,7 +12,7 @@ $message = $mensagem;
 
 $teste = mail($to, $subject, $mensagem);
 if ($teste) {
-    header('location: email.html');
+    header('location: enviado.html');
 } 
 else {echo "email não enviado";}
 
